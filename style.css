@@ -1,0 +1,301 @@
+/* upundu font */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* Kanit font */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    /* any change in this web site change here easyly */
+
+    /* font size */
+    --h1-size: 4.5rem;
+    --h2-size: 3.2rem;
+    --h3-size: 1.8rem;
+    --p-size: 1.2rem;
+    --nav-size: 1.0rem;
+
+    /* color code */
+    --main-color: #00cbfd;
+    --second-color: #049fc6b8;
+    --nav-cover: #01e7b8;
+    --bg-color: #020202;
+    --section--color: #06080a;
+    --font-color: #FFF;
+    --nav-p-font-color: #484059;
+    --btn-cover: #0464ff;
+    --btn-color: #3376e3;
+
+    /* font family */
+    --upudu-font: 'upundu', sans-serif;
+    --Kanit-font: 'kanit', sans-serif;
+
+}
+
+section {
+    margin: 50px 7% 100px;
+    background-color: var(--section--color);
+    color: var(--nav-p-font-color);
+    font-size: var(--p-size);
+    border-radius: 25px;
+    position:static;
+}
+
+.main-frame {
+    width: 100%;
+    background-color: var(--bg-color);
+    font-family: var(--Kanit-font);
+}
+
+/* start */
+
+/* nav bar */
+.nav-bar {
+    margin: 20px 3% 40px;
+    top: 0;
+    left: 0;
+    padding: 8px;
+    justify-content: space-around;
+    position: relative;
+
+}
+
+.nav-bar .nav-links {
+    display: flex;
+    position: fixed;
+
+}
+
+.nav-bar .nav-links li {
+    list-style: none;
+    padding: 0px 20px;
+
+}
+
+.nav-bar .nav-links li a {
+    font-size: var(--nav-size);
+    font-family: var(--upudu-font);
+    color: var(--nav-p-font-color);
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.nav-bar .nav-links li a:hover {
+    color: var(--nav-cover);
+    border-bottom: 1px solid var(--nav-cover);
+}
+
+
+
+/* home */
+.home {
+    
+    border-radius: 15px;
+    height: auto;
+    text-align: start;
+    font-family: var(--Kanit-font)
+}
+
+.home .home-p {
+    position: relative;
+    padding: 10px 20px;
+}
+
+.home .home-p h1 {
+    cursor: pointer;
+    font-size: var(--h1-size);
+    color: var(--main-color);
+    padding: 10px 0px;
+    margin: 0;
+    text-shadow: 0px 0px 5px var(--main-color);
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 3.5px;
+}
+
+.home .home-p h3 {
+    cursor: pointer;
+    font-size: var(--h3-size);
+    padding: 10px 0px;
+    padding-bottom: 30px;
+    margin: 0;
+    font-weight: 500;
+    line-height: 0.9;
+}
+
+.home .home-p .home-btn a {
+    text-decoration: none;
+    margin: 15px;
+    padding: 5px 25px;
+    cursor: pointer;
+    font-size: var(--nav-size);
+    font-weight: bold;
+    color: var(--btn-color);
+    background: transparent;
+    border: 2px solid var(--font-color);
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.home .home-p .home-btn a:hover {
+    color: var(--font-color);
+    background: var(--btn-cover);
+    border: 2px solid var(--font-color);
+}
+
+.home .home-icon {
+    display: flex;
+    justify-content: end;
+    margin: 40px 0 10px;
+    flex-wrap: wrap;
+}
+
+.home .home-icon a img {
+    max-width: 40px;
+    border: 2px solid transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+.home .home-icon a img:hover {
+    border-bottom: 2px solid var(--nav-cover);
+}
+
+
+
+/* About */
+.about {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    font-family: var(--Kanit-font)
+}
+
+.about .about-p {
+    flex-basis: 70%;
+    padding: 40px;
+}
+
+.about .about-p .about-head {
+    width: 150px;
+}
+
+.about .about-p .about-head h2 {
+    font-size: var(--h2-size);
+    margin-top: 0;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--nav-cover);
+}
+
+.about .about-p h3 a {
+    font-size: var(--h3-size);
+    text-decoration: none;
+    font-weight: 400;
+    color: var(--btn-cover);
+}
+
+.about .about-p p {
+    text-align: justify;
+}
+
+.about .about-pic {
+    flex-basis: 30%;
+    padding: 50px;
+}
+
+.about .about-pic img {
+    width: 200px;
+    box-shadow: 2px 2px 30px black;
+    border-radius: 15px;
+}
+
+
+/* resume */
+.resume {
+    height: auto;
+    text-align: start;
+    font-family: var(--Kanit-font)
+}
+
+.resume .resume-head {
+    max-width: 270px;
+    padding: 10px 40px 0px;
+}
+
+.resume .resume-head h2 {
+    font-size: var(--h2-size);
+    color: var(--main-color);
+    border-bottom: 1px solid var(--nav-cover);
+}
+
+/* resume paragraph set */
+.resume .resume-p {
+    padding: 20px 40px;
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.resume .resume-p h3 {
+    color: var(--btn-cover);
+    font-size: var(--h3-size);
+    font-weight: 400;
+    line-height: 0.8;
+}
+
+.resume .resume-p .resume-skill {
+    flex-basis: 25%;
+}
+
+.resume .resume-p .resume-exp {
+    flex-basis: 45%;
+}
+
+.resume .resume-p .resume-exp .exp li {
+    line-height: 1.1;
+}
+
+.resume .resume-p .resume-exp .exp p {
+    padding: 0px 30px 15px;
+    line-height: 1.1;
+}
+
+.resume .resume-p .resume-exp .exp p a {
+    text-decoration: none;
+    opacity: 70%;
+    border: 1px solid transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+.resume .resume-p .resume-exp .exp p a:hover {
+    color: var(--main-color);
+    border-bottom: 1px solid var(--nav-cover);
+}
+
+.resume .resume-p .resume-can-do {
+    flex-basis: 30%;
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    opacity: 60%;
+}
+
+footer a {
+    font-size: var(--nav-size);
+    color: var(--nav-p-font-color);
+    text-decoration: none;
+    font-family: var(--upudu-font);
+    cursor: pointer;
+}
