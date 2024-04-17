@@ -96,7 +96,8 @@ section {
 
 /* home */
 .home {
-    
+    background-image: url(/hbg.jpg);
+    background-size: cover;
     border-radius: 15px;
     height: auto;
     text-align: start;
